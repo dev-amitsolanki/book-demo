@@ -44,7 +44,6 @@ defineProps({
                                     <td class="border px-6 py-4">{{ data.id }}</td>
                                     <td class="border px-6 py-4">{{ data.name }}</td>
                                     <td class="border px-6 py-4 w-3/12">
-                                        <!-- <button type="button" class="px-3 py-2 text-xs font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">Remove</button> -->
                                         <RemoveCollaboratorForm :users="users" :collaborator_id="data.id" :book_id="id" />
                                     </td>
                                 </tr>

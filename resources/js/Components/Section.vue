@@ -18,7 +18,6 @@ defineProps({
     }
 });
 const addSubSection = (section) => {
-    // $emit('addSubSection',index,uuid);
     let data = {
         title : '',
         text : '',

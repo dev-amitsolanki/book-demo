@@ -45,16 +45,11 @@ const addSubSection = (index,uuid) => {
         uuid : uuidv4(),
         parent_id: uuid
     }
-    // chapters[index].sections.push(data)
-        // console.log(index,uuid,'chapters')
-        
     form.chapters[index].sections.map((value) => {
         let obj = find_by_id(uuid,value)
          obj.sections = [data]
          return obj
     })
-    // console.log(chapters,'chapters[index].sections')
-    
 };
 const find_by_id = (target, object) => {
   if (object.uuid === target) {
@@ -67,9 +62,6 @@ const find_by_id = (target, object) => {
     }
   }
 }
-// const submitData = () => {
-//     console.log(chapters,'chapters')
-// }
 </script>
 
 <template>

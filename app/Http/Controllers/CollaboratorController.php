@@ -46,7 +46,6 @@ class CollaboratorController extends Controller
             $book = Book::whereId($request->book_id)->first();
             $collaborators = $book->collaborators->pluck('id')->toArray();
             if (in_array($request->collaborator_id, $collaborators)) {
-                // $collaborators[] = $request->collaborator_id;
                 array_splice($collaborators, array_search($request->collaborator_id, $collaborators), 1);
             }
             $book->collaborators()->sync($collaborators);
